@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>B-Ble</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+  window.onclick = function(e)
+  {   var id =  e.target.id;   
+   if (id === 'sent')  
+   { var txt = document.getElementById('example').value    
+     $( "#para" ).empty().append( txt );
+   }
+  }
+</script>
+<!--logo as favicon-->
+<link rel="icon" href="/images/BBle.ico">
+</head>
+<body>
+
+<div class="header">
+  <h1>Bubbly Bible</h1>
+</div>
+
+
+<div class="navbar">
+  <!--best to use ul & il , link to work organise-->
+  <ul class="navbar">
+  <li><a href="#">Home</a></li>
+  <li><a href="#targetDiscussion">Discussion</a></li>
+  <li><a href="#targetArticles">Articles</a></li>
+  <li><a href="#targetAbout"><img src="/images/B.gif" class="centre" width="80px" height="60px"></a></li>
+  <li><a href="/log.html" class="right">sign-in</a></li>
+</ul>
+</div>
+
+<div class="row">
+  <div class="side">
+    <a name="targetAbout"></a>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+       <h2>About <b>B-Ble</b></h2>
+    <p>The Bubbly Bible is created to aid us in our christian growth. In collaboration with our brethen.</P><p>     
+      B-Ble will assist on allowing an enriched exchange and sourceful gain of a daily bible verse disscussion.</p> 
+    <p>We hope what you find here will add to your understanding of and appreciation for the Bible.</p>
+    <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h1>TRUTH</h1>
+          </div>
+          <div class="flip-box-back">
+            <h2>UNDERSTANDING</h2>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h1>WAY</h1>
+          </div>
+          <div class="flip-box-back">
+            <h2>DIRECTION</h2>
+          </div>
+        </div>
+      </div>
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <h1>LIFE</h1>
+          </div>
+          <div class="flip-box-back">
+            <h2>CLARITY</h2>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="main">
+    <a name="targetDiscussion">
+    <h3 style="color: #064eac;"><b>LET'S TURN TO: </b></h3>
+    <p><b>Hebrews 3 verse 4</p>
+     <h2 class="verse">"Every house is built by someone, but God is the builder of everything"</h2>
+     <div id="disqus_thread"></div>
+     <script>
+     
+     /**
+     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+     /*
+     var disqus_config = function () {
+     this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+     this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+     };
+     */
+     (function() { // DON'T EDIT BELOW THIS LINE
+     var d = document, s = d.createElement('script');
+     s.src = 'https://https-bble-netlify-app.disqus.com/embed.js';
+     s.setAttribute('data-timestamp', +new Date());
+     (d.head || d.body).appendChild(s);
+     })();
+     </script>
+     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                                 
+    </a>
+  </div>
+
+  <div>
+    <h2>ARTICLES</h2>
+    <div class="row"><a name="targetArticles"></a>
+      <div class="column">
+        <a href="https://www.desiringgod.org/articles/why-we-should-love-our-enemies" target="_blank"><img src="images/lovehate.png" alt="lovehate" style="width:100%"></a>
+      </div>
+      <div class="column">
+        <a href="https://lifehopeandtruth.com/god/blog/three-lessons-from-the-book-of-job/" target="_blank"><img src="images/loosing.png" alt="loosing" style="width:100%"></a>
+      </div>
+      <div class="column">
+        <a href="https://www.theodysseyonline.com/5-bible-verses-read-seeking-gods-direction" target="_blank"><img src="images/where.png" alt="direction" style="width:100%"></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <footer>
+    <ul style="text-align: center;">
+      <li>Help</li>
+      <li>Terms and Policies</li>
+      <li> &#169; B-Ble 2020</li>
+    </ul>
+  </footer>  
+</div>
+<script id="dsq-count-scr" src="//https-bble-netlify-app.disqus.com/count.js" async></script>
+</body>
+</html>
